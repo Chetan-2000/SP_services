@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User</title>
+    {{>fevicon}}
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/myScript.js"></script>
+</head>
+
+<body>
+
+    {{>header}}
+
+        <div class="container">
+            <h1 id="ad-user-head">Admin</h1>
+        </div>
+    <div class="user-container">
+        <div class="row">
+            <div class="user-column-1">
+                <label for="uname">Username </label>
+            </div>
+            <div class="user-column-2">
+                <input type="text" id="uname" name="uname" placeholder="Enter User Name" size="40" aria-required="true"
+                    aria-invalid="false" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="user-column-1">
+                <label for="PWord">Password </label>
+            </div>
+            <div class="user-column-2">
+                <input type="password" id="PWord" name="PWord" placeholder="Enter Password" maxlength="8"
+                    aria-required="true" aria-invalid="false" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="user-button" style="margin-left:120px;">
+                <input id="but" type="submit" value="Login">
+            </div>
+            {{!-- <div class="register">&nbsp;&nbsp;&nbsp;
+                <a id="loglink" href="#">forgot password ?</a>&nbsp;&nbsp;&nbsp;
+                <a id="loglink" href="#">register here</a>
+            </div> --}}
+        </div>
+    </div>
+    {{>footer}}
+
+</body>
+
+</html>

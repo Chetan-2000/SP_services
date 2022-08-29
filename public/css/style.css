@@ -1,0 +1,775 @@
+body {
+    /* background-color: #fefefe; */
+    background-color: white;
+    color: black;
+    /* color: #555; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
+    /* overflow-y: hidden;
+    overflow-x: hidden; */
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* header */
+.main-header {
+    background-color: rgb(1, 12, 76);
+    color: white;
+}
+
+.site-logo {
+    display: flex;
+    align-items: center;
+}
+
+span {
+    padding: 20px;
+    font-size: 30px;
+    font-family: Nanum Myeongjo;
+    font-weight: bolder;
+}
+
+/* #mark {
+    font-weight: 900;
+}
+
+.marq-container {
+    width: 200px;
+    margin: auto;
+    overflow: hidden;
+} */
+
+/* navigation bar */
+
+ul.head-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(249, 84, 84);
+    font-family: 'Lucida Sans Unicode', 'Gill Sans Light';
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#navlink:hover {
+    color: white;
+}
+
+li a:hover {
+    background-color: red;
+}
+
+a.dropdown:hover {
+    color: white;
+}
+
+.dropdown {
+    float: right;
+}
+
+.dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 30px;
+    background-color: red;
+    text-decoration: none;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: red;
+    min-width: 103px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: brown;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* home page */
+
+.main-img img {
+    width: 100%;
+    display: block;
+    height: 400px;
+    /* z-index: 1; */
+    position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.caption img {
+    height: 300px;
+    width: 300px;
+}
+
+.caption {
+    padding: 30px;
+    position: absolute;
+    top: 25%;
+    right: 32%;
+}
+
+/* #showcase {
+    background-image: url('../img/home3.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 300px;
+    margin-bottom: 30px;
+} */
+
+.leftcol {
+    float: left;
+    width: 70%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.main-up {
+    margin-right: 30px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+}
+
+#wel {
+    font-weight: 800;
+}
+
+#wel-desc {
+    text-align: justify;
+    font-family: 'Lucida Sans Unicode', 'Gill Sans Light';
+}
+
+.main-down {
+    background: rgb(251, 208, 208);
+    padding: 20px;
+    margin-right: 30px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#wwa-main {
+    font-weight: 800;
+    font-size: larger;
+    color: red;
+}
+
+#wwa-desc {
+    text-align: justify;
+    font-family: 'Lucida Sans Unicode', 'Gill Sans Light';
+    font-size: larger;
+}
+
+.rightcol {
+    margin-top: 20px;
+    float: right;
+    width: 30%;
+    background: black;
+    color: white;
+    padding: 25px;
+    /* padding: 40px 29px 29px 29px; */
+    box-sizing: border-box;
+}
+
+.mainrow:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* footer */
+#main-footer {
+    background: rgb(1, 12, 76);
+    color: #fff;
+    padding: 20px;
+    margin-top: 40px;
+    font-family: 'Lucida Sans Unicode', 'Gill Sans Light';
+}
+
+.footleft {
+    text-align: left;
+    float: left;
+    width: 33.33333%;
+}
+
+.footcent {
+    text-align: center;
+    float: left;
+    width: 33.33333%;
+}
+
+.footright {
+    text-align: right;
+    float: right;
+    width: 33.33333%;
+}
+
+#footlink a:link,
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+/* .navigation {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+} */
+
+/* all pages head */
+#page-head {
+    margin: 50px;
+    text-align: center;
+    font-weight: 600;
+    color: rgb(249, 84, 84);
+}
+
+/* about page */
+
+.ab-head img {
+    opacity: 0.1;
+    width: 100%;
+    display: block;
+    height: 100px;
+    /* z-index: 1; */
+    position: relative;
+    /* margin-bottom: 30px; */
+    overflow: hidden;
+}
+
+.ab-head #page-head {
+    padding: 30px;
+    position: absolute;
+    top: 17%;
+    right: 41%;
+    color: red;
+}
+
+/* Create two equal columns that floats next to each other */
+div.img-column1 {
+    float: left;
+    width: 430px;
+    height: 250px;
+    margin-left: 100px;
+    margin-bottom: 40px;
+}
+
+div.img-column2 {
+    float: right;
+    width: 430px;
+    height: 250px;
+    margin-right: 100px;
+    margin-bottom: 40px;
+}
+
+/* Clear floats after the columns */
+/* .img-row:after {
+    content: "";
+    display: table;
+    clear: both;
+} */
+
+#w-head {
+    color: red;
+    /* margin-bottom: 30px; */
+    padding-bottom: 10px;
+}
+
+/* Create two equal columns that floats next to each other */
+div.who-column {
+    float: left;
+    width: 50%;
+    height: 500px;
+    padding-left: 60px;
+    padding-right: 15px;
+    color: #555;
+    text-align: justify;
+}
+
+div.why-column {
+    float: right;
+    width: 50%;
+    height: 500px;
+    padding-right: 60px;
+    padding-left: 15px;
+    color: #555;
+    text-align: justify;
+}
+
+/* Clear floats after the columns */
+/* .w-row:after {
+    content: "";
+    display: table;
+    clear: both;
+} */
+
+
+/* ***********services page************ */
+
+.service-desc {
+    padding: 0px 20px 70px 20px;
+    border-bottom: 1px solid rgb(249, 84, 84);
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* row 1 */
+
+/* div.uaimg-column1 {
+    float: left;
+    width: 550px;
+    height: 450px;
+    padding: 25px;
+}
+
+div.uguard-column2 {
+    float: right;
+    width: 550px;
+    height: 400px;
+    padding: 25px;
+    margin: 30px;
+    background-color: white;
+    color: #555;
+    box-shadow: 0 0 8px red;
+}
+
+div.aguard-column1 {
+    float: left;
+    width: 500px;
+    height: 400px;
+    padding: 25px;
+    margin: 30px;
+    background-color: white;
+    color: #555;
+    box-shadow: 0 0 8px red;
+}
+
+div.aimg-column2 {
+    float: right;
+    width: 600px;
+    height: 450px;
+    padding: 25px;
+} */
+
+div.uaimg-column1 {
+    float: left;
+    width: 550px;
+    height: 450px;
+    padding: 25px;
+}
+
+div.uguard-column2 {
+    float: right;
+    width: 550px;
+    height: 400px;
+    padding: 25px;
+    margin: 30px;
+    background-color: white;
+    color: #555;
+    box-shadow: 0 0 8px grey;
+    /* box-shadow: 0 0 8px red; */
+}
+
+div.aguard-column1 {
+    float: left;
+    width: 500px;
+    height: 400px;
+    padding: 25px;
+    margin: 30px;
+    background-color: white;
+    color: #555;
+    box-shadow: 0 0 8px grey;
+    /* box-shadow: 0 0 8px red; */
+}
+
+div.aimg-column2 {
+    float: right;
+    width: 600px;
+    height: 450px;
+    padding: 25px;
+}
+
+/* Clear floats after the columns */
+.serv-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* career */
+.column-1 {
+    float: left;
+    width: 15%;
+    padding: 10px;
+}
+
+.column-2 {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    margin-right: 60px;
+
+}
+
+.column-3 {
+    float: left;
+    width: 15%;
+    padding: 10px;
+    margin-left: 60px;
+    /* height: 300px; */
+}
+
+.column-4 {
+    float: right;
+    width: 30%;
+    padding: 10px;
+}
+
+/* your masseges */
+.col-1 {
+    float: left;
+    width: 15%;
+    margin-top: 6px;
+    padding: 10px;
+}
+
+.col-2 {
+    float: right;
+    width: 85%;
+    margin-top: 6px;
+    padding: 10px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+/* input[type=submit] {
+    background-color: #3498DB;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #3d83fc;
+} */
+
+
+@media screen and (max-width: 600px) {
+
+    .column-1,
+    .column-2,
+    .column-3,
+    .column-4,
+    .col-1,
+    .col-2,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+/*****    contact ******/
+
+/* .divleft {
+    float: left;
+    width: 50%;
+}
+
+.divright {
+    float: left;
+    width: 50%;
+} */
+
+#contact-get {
+    /* position: absolute; */
+    margin-left: 5px;
+    font-family: Impact;
+    /* font-size: x-large; */
+    /* border-bottom: 3px solid goldenrod; */
+}
+
+/* #cont-s {
+    border-bottom: 3px solid goldenrod;
+} */
+
+.cont-left {
+    float: left;
+    width: 60%;
+    padding: 10px;
+    background-color: rgb(244, 242, 242);
+}
+
+.cont-column-1 {
+    float: left;
+    width: 25%;
+    padding: 10px;
+
+}
+
+.cont-column-2 {
+    float: left;
+    /* width: 25%; */
+    padding: 10px;
+
+}
+
+/* .cont-column-3 {
+    position: absolute;
+    float: right;
+    width: 40%;
+    padding: 10px;
+
+} */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #3498DB;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #3d83fc;
+}
+
+.cont-left input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 300px;
+    margin: 10px;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    /* resize: vertical; */
+}
+
+.cont-left input[type=submit] {
+    background-color: goldenrod;
+    color: white;
+    padding: 12px 20px;
+    border: 2px solid goldenrod;
+    cursor: pointer;
+    float: left;
+}
+
+.send input[type=submit]:hover {
+    background-color: white;
+    color: black;
+}
+
+.map {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding-top: 50px;
+    /* margin: 30px; */
+}
+
+@media screen and (max-width: 600px) {
+
+    .cont-column-1,
+    .cont-column-2,
+    .cont-column-3 input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+/* user */
+
+#ad-user-head {
+    color: brown;
+    padding-top: 10px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.user-container {
+    width: 40%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.user-column-1 {
+    float: left;
+    width: 30%;
+    padding: 10px;
+}
+
+.user-column-2 {
+    float: left;
+    width: 70%;
+    padding: 10px;
+}
+
+.user-button {
+    float: left;
+    padding: 20px 0px 28px 55px;
+}
+
+.register {
+    padding: 25px;
+}
+
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type=password],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+#loglink:hover,
+#loglink:visited,
+#loglink:link {
+    color: black;
+    text-decoration: none;
+    font-family: 'Lucida Sans Unicode', 'Gill Sans Light';
+}
+
+
+/* #but input[type=submit] {
+    background-color: #3498DB;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+#but input[type=submit]:hover {
+    background-color: #3d83fc;
+} */
+
+
+/* responsivness */
+
+@media only screen and (max-width:800px) {
+
+    /* For tablets: */
+    .main {
+        width: 80%;
+        padding: 0;
+    }
+
+    .right {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:500px) {
+
+    /* For mobile phones: */
+    .menu,
+    .main,
+    .right {
+        width: 100%;
+    }
+}

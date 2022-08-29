@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User</title>
+    {{>fevicon}}
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/myScript.js"></script>
+</head>
+
+<body>
+
+    {{>header}}
+
+    <div id="about-head">
+        <div class="container">
+            <h1 style="color: rgb(46, 116, 244); padding-top:10px;font-weight:bolder;">Register Here</h1>
+        </div>
+    </div>
+    <div class="user-container">
+        <div class="row">
+            <div class="user-column-1">
+                <label for="fname">Your Name</label>
+            </div>
+            <div class="user-column-2">
+                <input type="text" id="name" name="fullname" placeholder="Enter Full Name" aria-required="true"
+                    aria-invalid="false" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="user-column-1">
+                <label for="MNumber">Mobile Number</label>
+            </div>
+            <div class="user-column-2">
+                <input type="text" id="mnumber" name="lmobilenumber" placeholder="Enter Your Mobile Number"
+                    aria-required="true" aria-invalid="false" />
+            </div>
+        </div>
+
+        <!-- email id -->
+        <div class="row">
+            <div class="user-column-1">
+                <label for="email">Email</label>
+            </div>
+            <div class="user-column-2">
+                <input type="text" id="email" name="emailid" placeholder="@gmail.com" aria-required="true"
+                    aria-invalid="false" />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="user-column-1">
+                <label for="PWord">Password </label>
+            </div>
+            <div class="user-column-2">
+                <input type="password" id="PWord" name="PWord" placeholder="Enter Password" maxlength="8"
+                    aria-required="true" aria-invalid="false" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="user-column-1">
+                <label for="PWord">Confirm Password </label>
+            </div>
+            <div class="user-column-2">
+                <input type="password" id="CPWord" name="CPWord" placeholder="Confirm Password" maxlength="8" aria-required="true"
+                    aria-invalid="false" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="user-button" style="margin-left:120px;">
+                <input id="but" type="submit" value="Register">
+            </div>
+        </div>
+    </div>
+    {{>footer}}
+
+</body>
+
+</html>

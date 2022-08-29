@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers</title>
+    {{>fevicon}}
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/myScript.js"></script>
+
+</head>
+
+<body>
+
+    {{>header}}
+
+    {{!-- <div id="about-head"> --}}
+        <div class="container">
+            <h1 id="page-head">CAREERS AT SP SERVICES</h1>
+        </div>
+        {{!--
+    </div> --}}
+    <div class="container">
+        <!-- <form action="/action_page.php"> -->
+        <form>
+
+            <div class="row">
+                <div class="column-1">
+                    <label for="fname">Your Name</label>
+                </div>
+                <div class="column-2">
+                    <input type="text" id="name" name="fullname" placeholder="Enter Full Name" aria-required="true"
+                        aria-invalid="false" />
+                </div>
+                <div class="column-3">
+                    <label for="MNumber">Mobile Number</label>
+                </div>
+                <div class="column-4">
+                    <input type="text" id="mnumber" name="lmobilenumber" placeholder="Enter Your Mobile Number"
+                        aria-required="true" aria-invalid="false" />
+                </div>
+            </div>
+            <!-- email id -->
+            <div class="row">
+                <div class="column-1">
+                    <label for="email">Email</label>
+                </div>
+                <div class="column-2">
+                    <input type="text" id="email" name="emailid" placeholder="@gmail.com" aria-required="true"
+                        aria-invalid="false" />
+                </div>
+                <!-- subject -->
+                <div class="column-3">
+                    <label for="Subject">Subject</label>
+                </div>
+                <div class="column-4">
+                    <input type="text" id="subject" name="careersubject" placeholder="Subject" aria-required="true"
+                        aria-invalid="false" />
+                </div>
+            </div>
+
+            <!-- position -->
+            <div class="row">
+                <div class="column-1">
+                    <label for="position">Your Position</label>
+                </div>
+                <div class="column-2">
+                    <input type="text" id="position" name="yourposition" placeholder="Your Position"
+                        aria-required="true" aria-invalid="false" />
+                </div>
+
+                <!-- CV -->
+                <div class="column-3">
+                    <label for="cv">CV</label>
+                </div>
+                <div class="column-4">
+                    <input type="file" id="cv" accept=".jpg, .pdf,.doc,.docx,.ppt,.txt" aria-required="true"
+                        aria-invalid="false" />
+                </div>
+            </div>
+
+            <!-- your msg -->
+            <div class="row">
+                <div class="col-1">
+                    <label for="subject">Your Massage</label>
+                </div>
+                <div class="col-2">
+                    <textarea id="msg" name="yourmsg" placeholder="Please Enter Your Massage"
+                        style="height:200px"></textarea>
+                </div>
+            </div>
+            <br>
+
+            <!-- submit button-->
+            <div class="row">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+
+    {{>footer}}
+
+</body>
+
+</html>

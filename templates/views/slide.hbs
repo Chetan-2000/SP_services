@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RRS</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/myScript.js"></script>
+    <style>
+        body {
+            background-color: #f9bf8c;
+        }
+
+        .images {
+            display: none
+        }
+
+        img {
+            vertical-align: center;
+            width: 100%;
+        }
+
+        /* Slideshow container */
+        .images-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+        /* Next & previous buttons */
+        .previous,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* Fading animation */
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    {{>header}}
+
+    <div class="images-container">
+
+        <div class="images fade">
+            <img src="img/home.jpg">
+        </div>
+
+        <div class="images fade">
+            <img src="img/home2.jpg">
+        </div>
+
+        <div class="images fade">
+            <img src="img/home3.jpg">
+        </div>
+
+        <a class="previous" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+    <br>
+
+    <script>
+        let Index = 1;
+        showSlides(Index);
+
+        function plusSlides(n) {
+            showSlides(Index += n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("images");
+            if (n > slides.length) { Index = 1 }
+            if (n < 1) { Index = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[Index - 1].style.display = "block";
+            setTimeout(showSlides, 5000);
+        }
+    </script>
+
+    <div class="container">
+        <div class="mainrow">
+            <div class="leftcol">
+                <div class="main-up">
+                    <h1>Welcome</h1>
+                    <p style="text-align: justify;">We are committed to providing highest quality of security and
+                        protection
+                        services to individuals and businesses in the Greater Toronto Area and surroundings. We set
+                        ourselves apart from the competition by
+                        custom designing our services to meet and exceed the specific demands and expectations of our
+                        clients.
+                        In doing so, we hand-pick highly experienced security professionals, provide meticulous training
+                        and
+                        ensure that our security personnel are fully bonded, insured and licensed.</p>
+                </div>
+                <div class="main-down">
+                    <p id="wwa-main">WHO WE ARE</p>
+                    <p id="wwa-desc">
+                        SP Services is the leading global integrated security company, specializing
+                        in the provision of security products, services and
+                        solutions.
+                </div>
+            </div>
+            <div class="rightcol">
+                <p>
+                <ul>Our strategic goals are to:
+                    <li>Establish our firm as the premier provider of security and protection services to our target
+                        market
+                    </li>
+                    <li>Develop a service standard through which all industry firms will be measured</li>
+                    <li>Expand the target market to include training of new license applicants and security officers
+                        to meet
+                        or exceed Ministry’s standards</li>
+                    <li>Recruit and retain the most qualified security personnel in the industry</li>
+                </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+    <style>
+        .leftcol {
+            float: left;
+            width: 70%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .main-up {
+            margin-right: 30px;
+            padding-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        .main-down {
+            background: #fff;
+            padding: 20px;
+            box-sizing: border-box;
+            margin-right: 30px;
+        }
+
+        #wwa-main {
+            font-weight: 800;
+            font-size: larger;
+            color: red;
+        }
+
+        #wwa-desc {
+            text-align: justify;
+            font-family: 'Lucida Sans Unicode', 'Gill Sans Light';
+            font-size: larger;
+        }
+
+        .rightcol {
+            float: right;
+            width: 30%;
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            box-sizing: border-box;
+
+        }
+
+        .mainrow:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+    {{!-- <section id="main">
+        <h1>Welcome</h1>
+        <p style="text-align: justify;">We are committed to providing highest quality of security and protection
+            services to individuals and
+            businesses in the Greater Toronto Area and surroundings. We set ourselves apart from the competition by
+            custom designing our services to meet and exceed the specific demands and expectations of our clients.
+            In doing so, we hand-pick highly experienced security professionals, provide meticulous training and
+            ensure that our security personnel are fully bonded, insured and licensed.</p>
+    </section>
+    <aside id="sidebar">
+        <p>
+        <ul>Our strategic goals are to:
+            <li>Establish our firm as the premier provider of security and protection services to our target market
+            </li>
+            <li>Develop a service standard through which all industry firms will be measured</li>
+            <li>Expand the target market to include training of new license applicants and security officers to meet
+                or exceed Ministry’s standards</li>
+            <li>Recruit and retain the most qualified security personnel in the industry</li>
+        </ul>
+        </p>
+    </aside> --}}
+
+    {{>footer}}
+
+</body>
+
+</html>
